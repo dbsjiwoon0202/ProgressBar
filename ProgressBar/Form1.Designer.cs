@@ -52,6 +52,7 @@
             this.butbtnRunton1.TabIndex = 1;
             this.butbtnRunton1.Text = "실행";
             this.butbtnRunton1.UseVisualStyleBackColor = true;
+            this.butbtnRunton1.Click += new System.EventHandler(this.ButbtnRunton1_Click);
             // 
             // btnENd
             // 
@@ -82,11 +83,15 @@
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "상태:";
             // 
+            // Timer
+            // 
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 155);
+            this.ClientSize = new System.Drawing.Size(334, 167);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnENd);
