@@ -21,6 +21,9 @@ namespace ProgressBar
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            this.Num = 0;
+            this.pbStatus.Value = Num;
+            this.lblStatus.Text = OrgStr;
 
         }
 
